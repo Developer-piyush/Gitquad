@@ -7,5 +7,5 @@
 
 Currently its a default unique domain of decentralized cloud, to add custom domain i just have to update some lines of code in dockerfile and need to add cname record in domain dns!
 
-Thank you
+Thank you <br>
 PIYUSH
