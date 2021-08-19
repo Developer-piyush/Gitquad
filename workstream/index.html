@@ -14,11 +14,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://s.gitcoin.co/static/v2/bundled/css/quadraticlands.93c20b.ee83a2f7be49.css"/>
+<link rel="stylesheet" href="../css/quadraticlands.93c20b.ee83a2f7be49.css"/>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 
-<link rel="icon" type="image/png" sizes="32x32" href='https://s.gitcoin.co/static/v2/images/quadraticlands/favicon.71760ff1833f.png'>
+<link rel="icon" type="image/png" sizes="32x32" href='../favicons/favicon.71760ff1833f.png'>
 
 <title>Quadratic Lands</title>
 
@@ -28,7 +28,7 @@
 <meta name="twitter:title" content="Gitcoin Quadratic Lands - Workstream" />
 <meta name="twitter:description"
   content="Gitcoin is where builders, developers, and protocols come together to build and fund the open web." />
-<meta name="twitter:image" content="https://s.gitcoin.co/static/v2/images/quadraticlands/twitter/default.01dcc187d82f.png" />
+<meta name="twitter:image" content="../images/default.01dcc187d82f.png" />
 
   <!-- google tag manager -->
   
@@ -137,7 +137,7 @@
         <li>About</li>
         </a>
     
-        <a href="https://gitcoin.co/quadraticlands/mission" data-kinetics-attraction data-kinetics-attraction-chance=".2"
+        <a href="../mission/" data-kinetics-attraction data-kinetics-attraction-chance=".2"
         data-kinetics-attraction-force="1" data-kinetics-attraction-size="50" data-kinetics-attraction-type="horz"
         >
         <li>Mission Control</li>
@@ -158,49 +158,12 @@
     </nav>
   </header>
 
-<script src="https://s.gitcoin.co/static/v2/js/quadraticlands/components/nav.770f27b732af.js"></script>
+  <script src="../js/nav.770f27b732af.js"></script>
 
 
   <!-- just load wallet menu when user is auth -->
-  
-    
 
-
-<div id="wallet-provider" data-kinetics-attraction data-kinetics-attraction-chance=".8"
-    data-kinetics-attraction-force="1.3" data-kinetics-attraction-grow="2" data-kinetics-attraction-mode="drone">
-
-	<div class="header" id="close-wallet-provider">
-		Wallet
-		<svg id="eaw904armoo1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="32" height="32"><style><![CDATA[#eaw904armoo1{pointer-events: all}#eaw904armoo1:hover #eaw904armoo2 {animation: eaw904armoo2_s_p 500ms linear infinite normal forwards}@keyframes eaw904armoo2_s_p { 0% {stroke: rgb(243,88,144)} 20% {stroke: rgb(111,63,245)} 44% {stroke: rgb(2,226,172)} 92% {stroke: rgb(243,88,144)} 100% {stroke: rgb(243,88,144)} }#eaw904armoo1:hover #eaw904armoo3 {animation: eaw904armoo3_s_p 500ms linear infinite normal forwards}@keyframes eaw904armoo3_s_p { 0% {stroke: rgb(243,88,144)} 24% {stroke: rgb(111,63,245)} 58% {stroke: rgb(2,226,172)} 100% {stroke: rgb(243,88,144)} }]]></style><line id="eaw904armoo2" x1="6" y1="6" x2="26" y2="26" fill="none" stroke="rgb(243,88,144)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line id="eaw904armoo3" x1="26" y1="6" x2="6" y2="26" fill="none" stroke="rgb(243,88,144)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-	</div>
-
-
-
-	<!-- status infos about the connected wallet -->
-	<div class="status wallet-hidden d-none">
-
-		<!-- network name e.g. rinkeby, mainnet -->
-		<div class="network-name"></div>
-
-		<!-- the account address -->
-		<div class="selected-account"></div>
-
-		<!-- wallet accounts -->
-		<span id="wallet-accounts"></span>
-
-    <!-- GTC token balance-->
-    <div class="token"><span id="token_balance"></span><span id="token_symbol"></span></div>
-
-	</div>
-
-	<!-- connect -->
-	<div class="provider" id="wallet-btn">Connect to a wallet</div>
-
-	<!-- disconnect -->
-	<div class="provider wallet-hidden d-none" id="btn-disconnect">
-		Disconnect
-		<svg id="ezdv8fwsbwim1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="32" height="32"><style><![CDATA[#ezdv8fwsbwim1{pointer-events: all}#ezdv8fwsbwim1:hover #ezdv8fwsbwim3 {animation: ezdv8fwsbwim3_s_p 500ms linear infinite normal forwards}@keyframes ezdv8fwsbwim3_s_p { 0% {stroke: rgb(243,88,144)} 30% {stroke: rgb(111,63,245)} 64% {stroke: rgb(2,226,172)} 100% {stroke: rgb(243,88,144)} }]]></style><path id="ezdv8fwsbwim2" d="M24.790000,6.790000C29.643678,11.644410,29.643283,19.514310,24.789116,24.368233C19.934950,29.222155,12.065050,29.222155,7.210884,24.368233C2.356717,19.514310,2.356322,11.644410,7.210000,6.790000" fill="none" stroke="rgb(111,63,245)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line id="ezdv8fwsbwim3" x1="16" y1="2.980000" x2="16" y2="19" fill="none" stroke="rgb(243,88,144)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-	</div>
+	
 
 </div>
 
@@ -228,24 +191,10 @@
 
 
 
-
+<!--
 <script src="https://s.gitcoin.co/static/v2/js/quadraticlands/components/wallet-provider.a4852ed5bf07.js"></script>
+-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  <!-- content -->
   
 
 
@@ -365,7 +314,7 @@
 <article data-kinetics-mode data-kinetics-mode-type="space" data-kinetics-mode-speed="1">
 
   <section class="column">
-    <h2>Git Involved in building GitcoinDAO</h2>
+    <h2>Get Involved in building GitcoinDAO</h2>
     <div class="intro purple">GitcoinDAO aims to be the best place to collectively build and fund our digital infrastructure.
 
       <br>
@@ -388,7 +337,7 @@
   </section>
 
   <section class="column">
-    <h3 class="aqua">Why git involved?</h3>
+    <h3 class="aqua">Why get involved?</h3>
     <ol class="decimal">
       <li>Meet some of the best web3 community members & level up your skills.</li>
       <li>Work on something meaningful.</li>
@@ -526,7 +475,7 @@
 <section id="footer">
   <a href="../../"  >Home</a>
   <a href="../../about.html"  >About</a>
-  <a href="https://gitcoin.co/quadraticlands/mission"  >Mission</a>
+  <a href="/mission/"  >Mission</a>
   <a href="/workstream"  >Workstream</a>
   <a href="../../faq.html"  >FAQ</a>
   <a href="https://gitcoin.co/legal/privacy" target="_blank">Privacy</a>
@@ -536,15 +485,6 @@
 
   <!-- javascripts -->
   
-
-<script>
-  var static_url = "https://s.gitcoin.co/static/";
-  var media_url = "https://c.gitcoin.co/";
-  document.contxt = {"STATIC_URL": "https://s.gitcoin.co/static/", "MEDIA_URL": "https://c.gitcoin.co/", "max_length": 730, "max_length_offset": 130, "search_url": "https://gitcoin.co/user_lookup", "base_url": "https://gitcoin.co/", "github_handle": "developer-piyush", "email": "developerpiyush007@gmail.com", "name": "PIYUSH CHOUDHARY", "raven_js_version": "6.8.0", "raven_js_dsn": "https://1173f936e09748929358b6072b85c2f3@sentry.io/1398424", "release": "2cb97692cb9b0174218e70ab07d21258324b5bcb", "env": "prod", "header_msg": "", "nav_salt": 0, "footer_msg": "", "INFURA_V3_PROJECT_ID": "1e0a90928efe4bb78bb1eeceb8aacc27", "giphy_key": "9KlLQxm7Ou02VMunQNhZKSM3kTrH7r8H", "youtube_key": "AIzaSyBHtSbU1iF_WQJUje9_nNNSA3Sr-kOQGaw", "fortmatic_live_key": "pk_live_57B0432207ECBDAD", "fortmatic_test_key": "YOUR-SupEr-SecRet-TeSt-FoRtMaTiC-KeY", "orgs": [], "profile_id": 154369, "is_pro": false, "ipfs_config": {"host": "ipfs-2.gitcoin.co", "port": 443, "protocol": "https", "root": "/api/v0"}, "access_token": "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", "is_staff": false, "is_moderator": false, "is_alpha_tester": false, "user_groups": [], "persona_is_funder": false, "persona_is_hunter": true, "pref_do_not_track": true, "profile_url": "https://gitcoin.co/developer-piyush", "quests_live": true, "onboard_tasks": [{"link": "/settings/job?utm_source=onboard_job", "title": "Complete your work settings"}, {"link": "/townsquare?utm_source=onboard_ts", "title": "Post on townsquare"}, {"link": "/quests?utm_source=onboard_quests", "title": "Get your first kudos solving a Quest"}, {"link": "/hackathon-list/?utm_source=onboard_hackathons", "title": "Find a Hackathon"}, {"link": "/profile/trust/?utm_source=onboard_verify", "title": "Verify your profile"}], "ptoken_abi": [{"inputs": [{"internalType": "string", "name": "_name", "type": "string"}, {"internalType": "string", "name": "_symbol", "type": "string"}, {"internalType": "uint256", "name": "_price", "type": "uint256"}, {"internalType": "uint256", "name": "_initialSupply", "type": "uint256"}, {"internalType": "address", "name": "_acceptedERC20", "type": "address"}], "stateMutability": "nonpayable", "type": "constructor"}, {"anonymous": false, "inputs": [{"indexed": true, "internalType": "address", "name": "owner", "type": "address"}, {"indexed": true, "internalType": "address", "name": "spender", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "value", "type": "uint256"}], "name": "Approval", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": false, "internalType": "address", "name": "owner", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "amountBurned", "type": "uint256"}], "name": "Burned", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": false, "internalType": "address", "name": "owner", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "price", "type": "uint256"}, {"indexed": false, "internalType": "uint256", "name": "supply", "type": "uint256"}], "name": "Initialized", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": false, "internalType": "address", "name": "owner", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "amountMinted", "type": "uint256"}], "name": "Minted", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": true, "internalType": "address", "name": "previousOwner", "type": "address"}, {"indexed": true, "internalType": "address", "name": "newOwner", "type": "address"}], "name": "OwnershipTransferred", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": false, "internalType": "address", "name": "owner", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "newPrice", "type": "uint256"}], "name": "PriceUpdated", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": false, "internalType": "address", "name": "buyer", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "cost", "type": "uint256"}, {"indexed": false, "internalType": "uint256", "name": "amountReceived", "type": "uint256"}], "name": "Purchased", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": false, "internalType": "address", "name": "seller", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "amountRedeemed", "type": "uint256"}], "name": "Redeemed", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": true, "internalType": "address", "name": "from", "type": "address"}, {"indexed": true, "internalType": "address", "name": "to", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "value", "type": "uint256"}], "name": "Transfer", "type": "event"}, {"inputs": [{"internalType": "address", "name": "owner", "type": "address"}, {"internalType": "address", "name": "spender", "type": "address"}], "name": "allowance", "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}], "stateMutability": "view", "type": "function"}, {"inputs": [{"internalType": "address", "name": "spender", "type": "address"}, {"internalType": "uint256", "name": "amount", "type": "uint256"}], "name": "approve", "outputs": [{"internalType": "bool", "name": "", "type": "bool"}], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [{"internalType": "address", "name": "account", "type": "address"}], "name": "balanceOf", "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}], "stateMutability": "view", "type": "function"}, {"inputs": [{"internalType": "uint256", "name": "_amount", "type": "uint256"}], "name": "burn", "outputs": [], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [], "name": "decimals", "outputs": [{"internalType": "uint8", "name": "", "type": "uint8"}], "stateMutability": "view", "type": "function"}, {"inputs": [{"internalType": "address", "name": "spender", "type": "address"}, {"internalType": "uint256", "name": "subtractedValue", "type": "uint256"}], "name": "decreaseAllowance", "outputs": [{"internalType": "bool", "name": "", "type": "bool"}], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [{"internalType": "address", "name": "spender", "type": "address"}, {"internalType": "uint256", "name": "addedValue", "type": "uint256"}], "name": "increaseAllowance", "outputs": [{"internalType": "bool", "name": "", "type": "bool"}], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [{"internalType": "uint256", "name": "_amount", "type": "uint256"}], "name": "mint", "outputs": [], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [], "name": "name", "outputs": [{"internalType": "string", "name": "", "type": "string"}], "stateMutability": "view", "type": "function"}, {"inputs": [], "name": "owner", "outputs": [{"internalType": "address", "name": "", "type": "address"}], "stateMutability": "view", "type": "function"}, {"inputs": [], "name": "price", "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}], "stateMutability": "view", "type": "function"}, {"inputs": [{"internalType": "uint256", "name": "_amount", "type": "uint256"}], "name": "purchase", "outputs": [], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [{"internalType": "uint256", "name": "_amount", "type": "uint256"}], "name": "redeem", "outputs": [], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [], "name": "renounceOwnership", "outputs": [], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [], "name": "symbol", "outputs": [{"internalType": "string", "name": "", "type": "string"}], "stateMutability": "view", "type": "function"}, {"inputs": [], "name": "totalSupply", "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}], "stateMutability": "view", "type": "function"}, {"inputs": [{"internalType": "address", "name": "recipient", "type": "address"}, {"internalType": "uint256", "name": "amount", "type": "uint256"}], "name": "transfer", "outputs": [{"internalType": "bool", "name": "", "type": "bool"}], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [{"internalType": "address", "name": "sender", "type": "address"}, {"internalType": "address", "name": "recipient", "type": "address"}, {"internalType": "uint256", "name": "amount", "type": "uint256"}], "name": "transferFrom", "outputs": [{"internalType": "bool", "name": "", "type": "bool"}], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [{"internalType": "address", "name": "newOwner", "type": "address"}], "name": "transferOwnership", "outputs": [], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [{"internalType": "uint256", "name": "_newPrice", "type": "uint256"}], "name": "updatePrice", "outputs": [], "stateMutability": "nonpayable", "type": "function"}], "ptoken_factory_address": "0x358bcf43fe7ec2659aD829F3604c72781fc93a9E", "ptoken_factory_abi": [{"anonymous": false, "inputs": [{"indexed": false, "internalType": "contract PToken", "name": "token", "type": "address"}], "name": "NewPToken", "type": "event"}, {"inputs": [{"internalType": "string", "name": "_name", "type": "string"}, {"internalType": "string", "name": "_symbol", "type": "string"}, {"internalType": "uint256", "name": "_cost", "type": "uint256"}, {"internalType": "uint256", "name": "_supply", "type": "uint256"}, {"internalType": "address", "name": "_acceptedERC20", "type": "address"}], "name": "createPToken", "outputs": [], "stateMutability": "nonpayable", "type": "function"}], "ptoken_address": "", "ptoken_id": null, "is_location_blocked_for_ptokens": false, "match_payouts_abi": "[ { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"_owner\", \"type\": \"address\" }, { \"internalType\": \"address\", \"name\": \"_funder\", \"type\": \"address\" }, { \"internalType\": \"contract IERC20\", \"name\": \"_dai\", \"type\": \"address\" } ], \"stateMutability\": \"nonpayable\", \"type\": \"constructor\" }, { \"anonymous\": false, \"inputs\": [], \"name\": \"Finalized\", \"type\": \"event\" }, { \"anonymous\": false, \"inputs\": [], \"name\": \"Funded\", \"type\": \"event\" }, { \"anonymous\": false, \"inputs\": [], \"name\": \"FundingWithdrawn\", \"type\": \"event\" }, { \"anonymous\": false, \"inputs\": [ { \"indexed\": false, \"internalType\": \"address\", \"name\": \"recipient\", \"type\": \"address\" }, { \"indexed\": false, \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"name\": \"PayoutAdded\", \"type\": \"event\" }, { \"anonymous\": false, \"inputs\": [ { \"indexed\": false, \"internalType\": \"address\", \"name\": \"recipient\", \"type\": \"address\" }, { \"indexed\": false, \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"name\": \"PayoutClaimed\", \"type\": \"event\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"_recipient\", \"type\": \"address\" } ], \"name\": \"claimMatchPayout\", \"outputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"dai\", \"outputs\": [ { \"internalType\": \"contract IERC20\", \"name\": \"\", \"type\": \"address\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"enablePayouts\", \"outputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"finalize\", \"outputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"funder\", \"outputs\": [ { \"internalType\": \"address\", \"name\": \"\", \"type\": \"address\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"owner\", \"outputs\": [ { \"internalType\": \"address\", \"name\": \"\", \"type\": \"address\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"\", \"type\": \"address\" } ], \"name\": \"payouts\", \"outputs\": [ { \"internalType\": \"uint256\", \"name\": \"\", \"type\": \"uint256\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [ { \"components\": [ { \"internalType\": \"address\", \"name\": \"recipient\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"internalType\": \"struct MatchPayouts.PayoutFields[]\", \"name\": \"_payouts\", \"type\": \"tuple[]\" } ], \"name\": \"setPayouts\", \"outputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"state\", \"outputs\": [ { \"internalType\": \"enum MatchPayouts.State\", \"name\": \"\", \"type\": \"uint8\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"withdrawFunding\", \"outputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"function\" } ]", "match_payouts_address": "0x3ebAFfe01513164e638480404c651E885cCA0AA4", "mautic_id": "582792"};
-</script>
-
-<script src="/jsi18n/"></script>
-
 
 
   <script
@@ -615,10 +555,10 @@
 
 
 
-<!-- JS web3 -->
-<script src="https://s.gitcoin.co/static/v2/bundled/js/gitcoin.4c36af.00ed72299bff.js"></script>
-
-<script src="https://s.gitcoin.co/static/v2/js/lib/web3.min.fbcef5f40431.js"></script>
+<!-- JS web3 
+<script src="../js/gitcoin.4c36af.00ed72299bff.js"></script>
+-->
+<script src="../js/lib/web3.min.fbcef5f40431.js"></script>
 
 
 <!-- JS external cdn scripts -->
@@ -631,14 +571,14 @@
 
 
 <!-- JS Gitcoin Network -->
-<script src="https://s.gitcoin.co/static/v2/bundled/js/gitcoin.f06047.35150b9d9ee3.js"></script>
+<script src="../js/gitcoin.f06047.35150b9d9ee3.js"></script>
 
 
 <!-- JS Quadratic Lands -->
-<script src="https://s.gitcoin.co/static/v2/bundled/js/quadraticlands.6159ae.7036008954e6.js"></script>
+<script src="../js/quadraticlands.6159ae.7036008954e6.js"></script>
 
 
-<!-- Artefact - not sure if we need this -->
+<!-- Artefact - not sure if we need this 
 <script>
   var host = ("ipfs-2.gitcoin.co" == "ipfs" ? "localhost" : "ipfs-2.gitcoin.co");
   var ipfsConfig = {
@@ -648,6 +588,7 @@
     root: "/api/v0"
   };
 </script>
+-->
 
 
 
@@ -668,10 +609,10 @@
 
   <div class="text">
     By continuing to browse the site, you are agreeing to our use of cookies. Learn more at
-    <a href="/legal/cookie">Gitcoin's Privacy Policy.</a>
+    <a href="https://gitcoin.co/legal/cookie">Gitcoin's Privacy Policy.</a>
 
     Gitcoin is GDPR compliant. Learn more in
-    <a href="/legal/terms">Gitcoin's Terms & Conditions.</a>
+    <a href="https://gitcoin.co/legal/terms">Gitcoin's Terms & Conditions.</a>
   </div>
 
   <div class="button">
@@ -690,10 +631,10 @@
 
 
 <!-- sfx library-->
-<script src="https://s.gitcoin.co/static/v2/js/lib/quadraticlands/tone.cf1a1cd9d4f9.js"></script>
+<script src="../js/tone.cf1a1cd9d4f9.js"></script>
 
 <!-- animate workstream page header image ( hero-workstream.svg ) -->
-<script src="https://s.gitcoin.co/static/v2/js/quadraticlands/workstreams/index.6acdc62276a2.js"></script>
+<script src="../js/index.6acdc62276a2.js"></script>
 
 
   <script>
