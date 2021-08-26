@@ -158,17 +158,101 @@ __SVGATOR_PLAYER__.build({"root":"e1as2xxpodx71","animations":[{"duration":400,"
 	class="btn sm">Log in</a>
 	</div>
 	-->
+	<!-- default wallet button / wallet status
+    what TRIGGER another div to pop up (components/wallet-provider.html) -->
+    <div id="nav-wallet" data-kinetics-attraction data-kinetics-attraction-chance=".2"
+      data-kinetics-attraction-force="1" data-kinetics-attraction-size="50" data-kinetics-attraction-type="horz" >
+
+      <!-- NETWORK -->
+      <span id="web3network" class="web3network hide"></span>
+
+      <div id="noproviderIcon">
+        <svg id="ewe3a0hr06xm1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="32" height="32"><style><![CDATA[#ewe3a0hr06xm1{pointer-events: all}#ewe3a0hr06xm1:hover #ewe3a0hr06xm2 {animation: ewe3a0hr06xm2_f_p 1000ms linear infinite normal forwards}@keyframes ewe3a0hr06xm2_f_p { 0% {fill: rgb(243,88,144)} 34% {fill: rgb(111,63,245)} 66% {fill: rgb(2,226,172)} 100% {fill: rgb(243,88,144)} }]]></style><circle id="ewe3a0hr06xm2" r="3" transform="matrix(1 0 0 1 24 16)" fill="rgb(243,88,144)" stroke="none" stroke-width="1"/><path id="ewe3a0hr06xm3" d="M17,14L17,21C17,21.552285,17.447715,22,18,22L28,22C28.552285,22,29,22.447715,29,23L29,28C29,28.552285,28.552285,29,28,29L4,29C3.447715,29,3,28.552285,3,28L3,4C3,3.447715,3.447715,3,4,3L28,3C28.552285,3,29,3.447715,29,4L29,9C29,9.552285,28.552285,10,28,10L18,10C17.447715,10,17,10.447715,17,11L17,16" fill="none" stroke="rgb(111,63,245)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+
+      <!-- this will add an image inside this div, if a provider  -->
+      <div id="navbarDropdownWallet">
+        <!-- mandatory to not fuck the wallet.js code -->
+        <svg class="provider-icon" style="display:none;"></svg>
+      </div>
+    </div>
 	
 
 </nav>
 </header>
+
+
 <script src="js/nav.770f27b732af.js"></script>
 
 
   <!-- just load wallet menu when user is auth -->
   
+<div id="wallet-provider" data-kinetics-attraction data-kinetics-attraction-chance=".8"
+data-kinetics-attraction-force="1.3" data-kinetics-attraction-grow="2" data-kinetics-attraction-mode="drone">
 
-  <!-- content -->
+<div class="header" id="close-wallet-provider">
+	Wallet
+	<svg id="eaw904armoo1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="32" height="32"><style><![CDATA[#eaw904armoo1{pointer-events: all}#eaw904armoo1:hover #eaw904armoo2 {animation: eaw904armoo2_s_p 500ms linear infinite normal forwards}@keyframes eaw904armoo2_s_p { 0% {stroke: rgb(243,88,144)} 20% {stroke: rgb(111,63,245)} 44% {stroke: rgb(2,226,172)} 92% {stroke: rgb(243,88,144)} 100% {stroke: rgb(243,88,144)} }#eaw904armoo1:hover #eaw904armoo3 {animation: eaw904armoo3_s_p 500ms linear infinite normal forwards}@keyframes eaw904armoo3_s_p { 0% {stroke: rgb(243,88,144)} 24% {stroke: rgb(111,63,245)} 58% {stroke: rgb(2,226,172)} 100% {stroke: rgb(243,88,144)} }]]></style><line id="eaw904armoo2" x1="6" y1="6" x2="26" y2="26" fill="none" stroke="rgb(243,88,144)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line id="eaw904armoo3" x1="26" y1="6" x2="6" y2="26" fill="none" stroke="rgb(243,88,144)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</div>
+
+
+
+<!-- status infos about the connected wallet -->
+<div class="status wallet-hidden d-none">
+
+	<!-- network name e.g. rinkeby, mainnet -->
+	<div class="network-name"></div>
+
+	<!-- the account address -->
+	<div class="selected-account"></div>
+
+	<!-- wallet accounts -->
+	<span id="wallet-accounts"></span>
+
+<!-- GTC token balance-->
+<div class="token"><span id="token_balance"></span><span id="token_symbol"></span></div>
+
+</div>
+
+<!-- connect -->
+<div class="provider" id="wallet-btn">Connect to a wallet</div>
+
+<!-- disconnect -->
+<div class="provider wallet-hidden d-none" id="btn-disconnect">
+	Disconnect
+	<svg id="ezdv8fwsbwim1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="32" height="32"><style><![CDATA[#ezdv8fwsbwim1{pointer-events: all}#ezdv8fwsbwim1:hover #ezdv8fwsbwim3 {animation: ezdv8fwsbwim3_s_p 500ms linear infinite normal forwards}@keyframes ezdv8fwsbwim3_s_p { 0% {stroke: rgb(243,88,144)} 30% {stroke: rgb(111,63,245)} 64% {stroke: rgb(2,226,172)} 100% {stroke: rgb(243,88,144)} }]]></style><path id="ezdv8fwsbwim2" d="M24.790000,6.790000C29.643678,11.644410,29.643283,19.514310,24.789116,24.368233C19.934950,29.222155,12.065050,29.222155,7.210884,24.368233C2.356717,19.514310,2.356322,11.644410,7.210000,6.790000" fill="none" stroke="rgb(111,63,245)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line id="ezdv8fwsbwim3" x1="16" y1="2.980000" x2="16" y2="19" fill="none" stroke="rgb(243,88,144)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</div>
+
+</div>
+
+
+<div style="display: none;">
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWallet" role="button"
+data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<b class="wallet-network">•</b><i class="fas fa-wallet provider-icon"></i>
+</a>
+
+<div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="navbarDropdownWallet"></div>
+
+</div>
+
+<div id="templates" style="display: none;">
+<template id="template-balance">
+  <div class="wallet-option" data-toggle="tooltip" title="Click to select this wallet">
+	<div class="wallet-address"></div>
+	<small class="wallet-balance"></small>
+  </div>
+</template>
+</div>
+
+
+
+
+
+<script src="js/wallet-provider.a4852ed5bf07.js"></script>
+
+<!-- content -->
   
 
 <!-- HERO IMAGE -->
@@ -1285,6 +1369,11 @@ __SVGATOR_PLAYER__.build({"root":"e1as2xxpodx71","animations":[{"duration":400,"
   
  <!-- javascripts -->
 
+ <script>
+	var static_url = "https://s.gitcoin.co/static/";
+	var media_url = "https://c.gitcoin.co/";
+	document.contxt = {"STATIC_URL": "https://s.gitcoin.co/static/", "MEDIA_URL": "https://c.gitcoin.co/", "max_length": 733, "max_length_offset": 133, "search_url": "https://gitcoin.co/user_lookup", "base_url": "https://gitcoin.co/", "github_handle": "developer-piyush", "email": "", "name": "PIYUSH CHOUDHARY", "raven_js_version": "6.8.0", "raven_js_dsn": "https://1173f936e09748929358b6072b85c2f3@sentry.io/1398424", "release": "5860a586a29d2911dc8d3284ec21dbf1ddc4927e", "env": "prod", "header_msg": "", "nav_salt": 0, "footer_msg": "", "INFURA_V3_PROJECT_ID": "1e0a90928efe4bb78bb1eeceb8aacc27", "giphy_key": "9KlLQxm7Ou02VMunQNhZKSM3kTrH7r8H", "youtube_key": "AIzaSyBHtSbU1iF_WQJUje9_nNNSA3Sr-kOQGaw", "fortmatic_live_key": "pk_live_57B0432207ECBDAD", "fortmatic_test_key": "YOUR-SupEr-SecRet-TeSt-FoRtMaTiC-KeY", "orgs": [], "profile_id": 154369, "is_pro": false, "ipfs_config": {"host": "ipfs-2.gitcoin.co", "port": 443, "protocol": "https", "root": "/api/v0"}, "access_token": "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", "is_staff": false, "is_moderator": false, "is_alpha_tester": false, "user_groups": [], "persona_is_funder": false, "persona_is_hunter": true, "pref_do_not_track": true, "profile_url": "https://gitcoin.co/developer-piyush", "quests_live": true, "onboard_tasks": [{"link": "/settings/job?utm_source=onboard_job", "title": "Complete your work settings"}, {"link": "/townsquare?utm_source=onboard_ts", "title": "Post on townsquare"}, {"link": "/quests?utm_source=onboard_quests", "title": "Get your first kudos solving a Quest"}, {"link": "/hackathon-list/?utm_source=onboard_hackathons", "title": "Find a Hackathon"}, {"link": "/profile/trust/?utm_source=onboard_verify", "title": "Verify your profile"}], "ptoken_abi": [{"inputs": [{"internalType": "string", "name": "_name", "type": "string"}, {"internalType": "string", "name": "_symbol", "type": "string"}, {"internalType": "uint256", "name": "_price", "type": "uint256"}, {"internalType": "uint256", "name": "_initialSupply", "type": "uint256"}, {"internalType": "address", "name": "_acceptedERC20", "type": "address"}], "stateMutability": "nonpayable", "type": "constructor"}, {"anonymous": false, "inputs": [{"indexed": true, "internalType": "address", "name": "owner", "type": "address"}, {"indexed": true, "internalType": "address", "name": "spender", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "value", "type": "uint256"}], "name": "Approval", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": false, "internalType": "address", "name": "owner", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "amountBurned", "type": "uint256"}], "name": "Burned", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": false, "internalType": "address", "name": "owner", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "price", "type": "uint256"}, {"indexed": false, "internalType": "uint256", "name": "supply", "type": "uint256"}], "name": "Initialized", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": false, "internalType": "address", "name": "owner", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "amountMinted", "type": "uint256"}], "name": "Minted", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": true, "internalType": "address", "name": "previousOwner", "type": "address"}, {"indexed": true, "internalType": "address", "name": "newOwner", "type": "address"}], "name": "OwnershipTransferred", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": false, "internalType": "address", "name": "owner", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "newPrice", "type": "uint256"}], "name": "PriceUpdated", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": false, "internalType": "address", "name": "buyer", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "cost", "type": "uint256"}, {"indexed": false, "internalType": "uint256", "name": "amountReceived", "type": "uint256"}], "name": "Purchased", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": false, "internalType": "address", "name": "seller", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "amountRedeemed", "type": "uint256"}], "name": "Redeemed", "type": "event"}, {"anonymous": false, "inputs": [{"indexed": true, "internalType": "address", "name": "from", "type": "address"}, {"indexed": true, "internalType": "address", "name": "to", "type": "address"}, {"indexed": false, "internalType": "uint256", "name": "value", "type": "uint256"}], "name": "Transfer", "type": "event"}, {"inputs": [{"internalType": "address", "name": "owner", "type": "address"}, {"internalType": "address", "name": "spender", "type": "address"}], "name": "allowance", "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}], "stateMutability": "view", "type": "function"}, {"inputs": [{"internalType": "address", "name": "spender", "type": "address"}, {"internalType": "uint256", "name": "amount", "type": "uint256"}], "name": "approve", "outputs": [{"internalType": "bool", "name": "", "type": "bool"}], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [{"internalType": "address", "name": "account", "type": "address"}], "name": "balanceOf", "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}], "stateMutability": "view", "type": "function"}, {"inputs": [{"internalType": "uint256", "name": "_amount", "type": "uint256"}], "name": "burn", "outputs": [], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [], "name": "decimals", "outputs": [{"internalType": "uint8", "name": "", "type": "uint8"}], "stateMutability": "view", "type": "function"}, {"inputs": [{"internalType": "address", "name": "spender", "type": "address"}, {"internalType": "uint256", "name": "subtractedValue", "type": "uint256"}], "name": "decreaseAllowance", "outputs": [{"internalType": "bool", "name": "", "type": "bool"}], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [{"internalType": "address", "name": "spender", "type": "address"}, {"internalType": "uint256", "name": "addedValue", "type": "uint256"}], "name": "increaseAllowance", "outputs": [{"internalType": "bool", "name": "", "type": "bool"}], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [{"internalType": "uint256", "name": "_amount", "type": "uint256"}], "name": "mint", "outputs": [], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [], "name": "name", "outputs": [{"internalType": "string", "name": "", "type": "string"}], "stateMutability": "view", "type": "function"}, {"inputs": [], "name": "owner", "outputs": [{"internalType": "address", "name": "", "type": "address"}], "stateMutability": "view", "type": "function"}, {"inputs": [], "name": "price", "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}], "stateMutability": "view", "type": "function"}, {"inputs": [{"internalType": "uint256", "name": "_amount", "type": "uint256"}], "name": "purchase", "outputs": [], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [{"internalType": "uint256", "name": "_amount", "type": "uint256"}], "name": "redeem", "outputs": [], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [], "name": "renounceOwnership", "outputs": [], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [], "name": "symbol", "outputs": [{"internalType": "string", "name": "", "type": "string"}], "stateMutability": "view", "type": "function"}, {"inputs": [], "name": "totalSupply", "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}], "stateMutability": "view", "type": "function"}, {"inputs": [{"internalType": "address", "name": "recipient", "type": "address"}, {"internalType": "uint256", "name": "amount", "type": "uint256"}], "name": "transfer", "outputs": [{"internalType": "bool", "name": "", "type": "bool"}], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [{"internalType": "address", "name": "sender", "type": "address"}, {"internalType": "address", "name": "recipient", "type": "address"}, {"internalType": "uint256", "name": "amount", "type": "uint256"}], "name": "transferFrom", "outputs": [{"internalType": "bool", "name": "", "type": "bool"}], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [{"internalType": "address", "name": "newOwner", "type": "address"}], "name": "transferOwnership", "outputs": [], "stateMutability": "nonpayable", "type": "function"}, {"inputs": [{"internalType": "uint256", "name": "_newPrice", "type": "uint256"}], "name": "updatePrice", "outputs": [], "stateMutability": "nonpayable", "type": "function"}], "ptoken_factory_address": "0x358bcf43fe7ec2659aD829F3604c72781fc93a9E", "ptoken_factory_abi": [{"anonymous": false, "inputs": [{"indexed": false, "internalType": "contract PToken", "name": "token", "type": "address"}], "name": "NewPToken", "type": "event"}, {"inputs": [{"internalType": "string", "name": "_name", "type": "string"}, {"internalType": "string", "name": "_symbol", "type": "string"}, {"internalType": "uint256", "name": "_cost", "type": "uint256"}, {"internalType": "uint256", "name": "_supply", "type": "uint256"}, {"internalType": "address", "name": "_acceptedERC20", "type": "address"}], "name": "createPToken", "outputs": [], "stateMutability": "nonpayable", "type": "function"}], "ptoken_address": "", "ptoken_id": null, "is_location_blocked_for_ptokens": false, "match_payouts_abi": "[ { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"_owner\", \"type\": \"address\" }, { \"internalType\": \"address\", \"name\": \"_funder\", \"type\": \"address\" }, { \"internalType\": \"contract IERC20\", \"name\": \"_dai\", \"type\": \"address\" } ], \"stateMutability\": \"nonpayable\", \"type\": \"constructor\" }, { \"anonymous\": false, \"inputs\": [], \"name\": \"Finalized\", \"type\": \"event\" }, { \"anonymous\": false, \"inputs\": [], \"name\": \"Funded\", \"type\": \"event\" }, { \"anonymous\": false, \"inputs\": [], \"name\": \"FundingWithdrawn\", \"type\": \"event\" }, { \"anonymous\": false, \"inputs\": [ { \"indexed\": false, \"internalType\": \"address\", \"name\": \"recipient\", \"type\": \"address\" }, { \"indexed\": false, \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"name\": \"PayoutAdded\", \"type\": \"event\" }, { \"anonymous\": false, \"inputs\": [ { \"indexed\": false, \"internalType\": \"address\", \"name\": \"recipient\", \"type\": \"address\" }, { \"indexed\": false, \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"name\": \"PayoutClaimed\", \"type\": \"event\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"_recipient\", \"type\": \"address\" } ], \"name\": \"claimMatchPayout\", \"outputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"dai\", \"outputs\": [ { \"internalType\": \"contract IERC20\", \"name\": \"\", \"type\": \"address\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"enablePayouts\", \"outputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"finalize\", \"outputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"funder\", \"outputs\": [ { \"internalType\": \"address\", \"name\": \"\", \"type\": \"address\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"owner\", \"outputs\": [ { \"internalType\": \"address\", \"name\": \"\", \"type\": \"address\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"\", \"type\": \"address\" } ], \"name\": \"payouts\", \"outputs\": [ { \"internalType\": \"uint256\", \"name\": \"\", \"type\": \"uint256\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [ { \"components\": [ { \"internalType\": \"address\", \"name\": \"recipient\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"internalType\": \"struct MatchPayouts.PayoutFields[]\", \"name\": \"_payouts\", \"type\": \"tuple[]\" } ], \"name\": \"setPayouts\", \"outputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"state\", \"outputs\": [ { \"internalType\": \"enum MatchPayouts.State\", \"name\": \"\", \"type\": \"uint8\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"withdrawFunding\", \"outputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"function\" } ]", "match_payouts_address": "0x3ebAFfe01513164e638480404c651E885cCA0AA4", "mautic_id": "582792"};
+  </script>
 
 <script src="/jsi18n/"></script>
 
@@ -1349,11 +1438,14 @@ __SVGATOR_PLAYER__.build({"root":"e1as2xxpodx71","animations":[{"duration":400,"
     
   </script>
 
+-->
 
 
+
+<!-- JS web3 -->
+<script src="js/gitcoin.4c36af.00ed72299bff.js"></script>
 
 <script src="js/web3.min.fbcef5f40431.js"></script>
--->
 
 <!-- JS external cdn scripts -->
 <script src="https://cdn.jsdelivr.net/npm/web3modal@latest/dist/index.min.js"></script>
@@ -1391,7 +1483,6 @@ __SVGATOR_PLAYER__.build({"root":"e1as2xxpodx71","animations":[{"duration":400,"
 
 <script>
   document.messages = []
-  
 </script>
 
 
