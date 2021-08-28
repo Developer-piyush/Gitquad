@@ -6,6 +6,8 @@ services:
     expose:
       - port: 80
         as: 80
+        accept:
+          - decentralized.quadraticlands.com
         to:
           - global: true
 
