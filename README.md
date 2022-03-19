@@ -4,7 +4,7 @@
 
 ## Swarm Link: https://bah5acgzazl7ndt55yv55abst7c4rdg46ndmbkth4rp77lgjxbgwzfxvciuja.bzz.link/
 
-## deployed this on decentralized cloud that is akash. https://akash.network/
+## Akash Link: http://857tp1qb31bkh1ncp6f3vsbb0s.ingress.provider-0.prod.ams1.akash.pub/
 
 # Discussion: [Click here](https://gov.gitcoin.co/t/request-for-proposal-gitcoindao-com-website/8114/12)
 
