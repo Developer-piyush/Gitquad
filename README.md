@@ -1,8 +1,10 @@
 # Gitquad Very first step towards decentralizing gitcoin [Quadraticlands.com]
 
+## Original Link: https://quadraticlands.com/
+
 ## Swarm Link: https://bah5acgzazl7ndt55yv55abst7c4rdg46ndmbkth4rp77lgjxbgwzfxvciuja.bzz.link/
 
-Just deployed this on decentralized cloud that is akash. https://akash.network/
+## deployed this on decentralized cloud that is akash. https://akash.network/
 
 # Discussion: [Click here](https://gov.gitcoin.co/t/request-for-proposal-gitcoindao-com-website/8114/12)
 
