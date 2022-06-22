@@ -1,10 +1,10 @@
 # Gitquad Very first step towards decentralizing gitcoin [Quadraticlands.com]
 
-## Original Link: https://quadraticlands.com/
+## Original Link: [click here](https://quadraticlands.com/)
 
-## Swarm Link: https://bah5acgzazl7ndt55yv55abst7c4rdg46ndmbkth4rp77lgjxbgwzfxvciuja.bzz.link/
+## Swarm Link: [click here](https://bah5acgzazl7ndt55yv55abst7c4rdg46ndmbkth4rp77lgjxbgwzfxvciuja.bzz.link/)
 
-## Akash Link: http://857tp1qb31bkh1ncp6f3vsbb0s.ingress.provider-0.prod.ams1.akash.pub/
+## Akash Link: [Click here](http://5v7umb9mt9asr8vj9fnrqu0t2o.ingress.akash.virtualhosting.hk/)
 
 # Discussion: [Click here](https://gov.gitcoin.co/t/request-for-proposal-gitcoindao-com-website/8114/12)
 
