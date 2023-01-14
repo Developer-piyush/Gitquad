@@ -19,7 +19,9 @@
   </p>
 </p>
 <hr>
-# Hosted at Ipfs
+
+## Qyadraticlands.com : Hosted at IPFS
+
 <hr>
 IPFS HASH: bafybeih6ond3g3blmzpux33hmez6jen45zckmh3wqcrziz2b6vayp3i2hu <br>
 Gateway Link: https://bafybeih6ond3g3blmzpux33hmez6jen45zckmh3wqcrziz2b6vayp3i2hu.ipfs.nftstorage.link/
