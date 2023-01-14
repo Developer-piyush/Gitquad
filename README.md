@@ -1,17 +1,25 @@
-# Gitquad Very first step towards decentralizing gitcoin [Quadraticlands.com]
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://gitcoin.co/">
+    <img src="https://d3vv6lp55qjaqc.cloudfront.net/items/263e3q1M2Y2r3L1X3c2y/helmet.png" alt="Logo" width="80" height="80">
+  </a>
 
-## Original Link: [click here](https://quadraticlands.com/)
+  <h3 align="center">Gitcoin (GTC)</h3>
 
-## Swarm Link: [click here](https://bah5acgzazl7ndt55yv55abst7c4rdg46ndmbkth4rp77lgjxbgwzfxvciuja.bzz.link/)
-
-## Akash Link: [Click here](http://5v7umb9mt9asr8vj9fnrqu0t2o.ingress.akash.virtualhosting.hk/)
-
-# Discussion: [Click here](https://gov.gitcoin.co/t/request-for-proposal-gitcoindao-com-website/8114/12)
-
-## App link: [Click here](http://decentralized.quadraticlands.com/)
-## App link: [Click here](http://857tp1qb31bkh1ncp6f3vsbb0s.ingress.provider-0.prod.ams1.akash.pub/)
-
-Currently its a default unique domain of decentralized cloud, to add custom domain i just have to update some lines of code in dockerfile and need to add cname record in domain dns, can be linked to ens if needed..
-
-Thank you <br>
-PIYUSH
+  <p align="center">
+    Gitcoin Grows Open Source.
+    <br />
+    <a href="https://gitcoin.co/"><strong>Explore more about Gitcoin »</strong></a>
+    <br />
+    <br />
+    <a href="https://gov.gitcoin.co/">Forum</a>
+    ·
+    <a href="https://docs.gitcoin.co">Docs</a>
+  </p>
+</p>
+<hr>
+# Hosted at Ipfs
+<hr>
+IPFS HASH: bafybeih6ond3g3blmzpux33hmez6jen45zckmh3wqcrziz2b6vayp3i2hu <br>
+Gateway Link: https://bafybeih6ond3g3blmzpux33hmez6jen45zckmh3wqcrziz2b6vayp3i2hu.ipfs.nftstorage.link/
