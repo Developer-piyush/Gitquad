@@ -20,7 +20,7 @@
 </p>
 <hr>
 
-## Qyadraticlands.com : Hosted at IPFS
+## Quadraticlands.com : Hosted at IPFS
 
 <hr>
 IPFS HASH: bafybeih6ond3g3blmzpux33hmez6jen45zckmh3wqcrziz2b6vayp3i2hu <br>
